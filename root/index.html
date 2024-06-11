@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tchubirau daum daum</title>
+    <link rel="stylesheet" href="carta.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="title">Feliz dia, meu pvt!</h1>
+    <div class="container">
+        <div class="card-container">
+            <div class="envelope-wrapper">
+                <div class="envelope">
+                    <div class="letter">
+                        <div class="text">
+                            <!-- <strong>Oioioioioi.</strong> -->
+                            <p>
+                                Venho, através desta, dizer que eu te amo muito, amor! Obrigada por estar sempre comigo. Amar você me tornou uma pessoa muito melhor. Não esperava que, em tão pouco tempo (mesmo não parecendo), eu fosse gostar tanto de alguém como gosto de você.</p>
+
+<p>Se você recebeu esta carta, meus parabéns! Você ganhou uma namorada incrível e dois gatos incluídos no pacote. Além disso, você concorda em montar meus treinos e treinar comigo, me suportar, assistir aos jogos do Fluminense, jogar jogos aleatórios e fazer muitas coisas juntos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="heart"></div>
+            </div>
+        </div>
+    </div>
+    <div class="terms">
+        <input type="checkbox" id="terms-checkbox">
+        <label for="terms-checkbox" class="label">Li e aceito os termos e condições</label>
+    </div>
+    <h2 class="question">Deseja prosseguir?</h2>
+    <div class="buttons">
+        <button class="yes">Sim</button>
+        <button class="no">Não</button>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+
+        const noButton = document.querySelector('.no');
+        noButton.addEventListener('mouseover', () => {
+            noButton.textContent = 'Sim';
+            noButton.style.backgroundColor = '#4CAF50';
+        });
+
+        noButton.addEventListener('mouseout', () => {
+            noButton.textContent = 'Não';
+            noButton.style.backgroundColor = '#f44336';
+        });
+
+        const buttons = document.querySelectorAll('button');
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const checkbox = document.getElementById('terms-checkbox');
+                if (checkbox.checked) {
+                    window.location.href = '../pagina_destino.html'; // substitua 'pagina_destino.html' pela URL desejada
+                } else {
+                    alert('Por favor, aceite os termos e condições antes de prosseguir.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
