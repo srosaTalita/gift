@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <title>Jogo da memória</title>
+</head>
+<body>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Jogo da memória</h2>
+            <button id="start-button">Start</button>
+        </div>
+    </div>
+    <div id="finish-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <h2>Parabéns!</h2>
+            <p>Você completou o jogo!</p>
+            <button id="prizes-button" style="display: none;"></button>
+            <img src="./img/qrCodeFinal.png" class="presente">
+        </div>
+    </div>
+    <main class="memory-game">
+        <div class="card" data-card="bowser">
+            <img src="./img/um.jpg"   class="card-front">
+            <img src="./img/heartr.jpg"   class="card-back">
+        </div>
+        <div class="card" data-card="luigi">
+            <img src="./img/dois.jpg"   class="card-front">
+            <img src="./img/heartr.jpg"   class="card-back">
+        </div>
+        <div class="card" data-card="mario">
+            <img src="./img/tres.jpg"   class="card-front">
+            <img src="./img/heartr.jpg"   class="card-back">
+        </div>
+        <div class="card" data-card="peach">
+            <img src="./img/quatro.jpg"   class="card-front">
+            <img src="./img/heartr.jpg"   class="card-back">
+        </div>
+        <div class="card" data-card="toad">
+            <img src="./img/cinco.jpg"   class="card-front">
+            <img src="./img/heartr.jpg"   class="card-back">
+        </div>
+        <div class="card" data-card="yoshi">
+            <img src="./img/seis.jpg"   class="card-front">
+            <img src="./img/heartr.jpg"   class="card-back">
+        </div>
+        <div class="card" data-card="badLuigi">
+            <img src="./img/sete.jpg"   class="card-front">
+            <img src="./img/heartr.jpg"   class="card-back">
+        </div>
+        <div class="card" data-card="badMario">
+            <img src="./img/oito.jpg"   class="card-front">
+            <img src="./img/heartr.jpg"   class="card-back">
+        </div>
+        <div class="card" data-card="bowser">
+            <img src="./img/um.jpg"   class="card-front">
+            <img src="./img/heartr.jpg"   class="card-back">
+        </div>
+        <div class="card" data-card="luigi">
+            <img src="./img/dois.jpg"   class="card-front">
+            <img src="./img/heartr.jpg"   class="card-back">
+        </div>
+        <div class="card" data-card="mario">
+            <img src="./img/tres.jpg"   class="card-front">
+            <img src="./img/heartr.jpg"   class="card-back">
+        </div>
+        <div class="card" data-card="peach">
+            <img src="./img/quatro.jpg"   class="card-front">
+            <img src="./img/heartr.jpg"   class="card-back">
+        </div>
+        <div class="card" data-card="toad">
+            <img src="./img/cinco.jpg"   class="card-front">
+            <img src="./img/heartr.jpg"   class="card-back">
+        </div>
+        <div class="card" data-card="yoshi">
+            <img src="./img/seis.jpg"   class="card-front">
+            <img src="./img/heartr.jpg"   class="card-back">
+        </div>
+        <div class="card" data-card="badLuigi">
+            <img src="./img/sete.jpg"   class="card-front">
+            <img src="./img/heartr.jpg"   class="card-back">
+        </div>
+        <div class="card" data-card="badMario">
+            <img src="./img/oito.jpg"   class="card-front">
+            <img src="./img/heartr.jpg"   class="card-back">
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
